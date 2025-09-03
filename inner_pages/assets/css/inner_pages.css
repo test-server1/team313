@@ -1,9 +1,18 @@
 @charset "UTF-8";
 /* ========= [ * inner pages ]  =========*/
 :root {
+  /* --bg-color: #151515; */
+  --bg-color: #1d201f;
+  /* --theme-color: #000; */
+  --theme-color: #1d201f;
+  /* --main-color: #d0ff71;  */
+  --main-color: #28d09f; 
+  --white-color: #ffffff; 
+}
+/* :root {
   --bg-color: #18191b;
   --theme-color: #0e0f11;
-  --main-color: #d0ff71; }
+  --main-color: #d0ff71; } */
 
 /* --------------- Menu --------------- */
 .navbar {
@@ -1465,7 +1474,7 @@ h6 {
 p {
   font-size: 16px;
   font-weight: 400;
-  color: #a4a4a4;
+  color: var(--white-color);
   margin: 0; }
 
 .sec-head .sub-head {
