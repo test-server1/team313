@@ -74,11 +74,11 @@
     justify-content: space-between;
     padding: 180px 0 80px;
     min-height: 800px; }
-  .header-ds .caption h1 {
+  .header-ds .caption h2 {
     font-size: 96px;
     line-height: 96px;
     font-weight: 600; }
-    .header-ds .caption h1 span {
+    .header-ds .caption h2 span {
       font-family: "Playfair Display", serif;
       font-style: italic;
       font-weight: 400; }
