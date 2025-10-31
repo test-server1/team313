@@ -300,8 +300,16 @@ figure {
     .hamenu .cont-info .logo {
       width: 200px;
       margin: auto; }
+    .hamenu .us-custom-logo-nav-mobile .logo {
+      width: 200px;
+      margin: auto; }
+
     .hamenu .cont-info .social-icon a {
       margin: 0 15px; }
+    .hamenu .us-custom-logo-nav-mobile .social-icon a {
+      margin: 0 15px; }
+    .hamenu .us-custom-logo-nav-mobile {
+      display: none; }  
     .hamenu .cont-info .text-center {
       -webkit-transform: translateY(50px);
       -ms-transform: translateY(50px);
@@ -319,6 +327,8 @@ figure {
 @media screen and (max-width: 768px) {
   .hamenu.open .cont-info {
     display: none; }
+  .hamenu.open .us-custom-logo-nav-mobile {
+    display: inline }
   .hamenu .menu-links {
     padding-right: 15px;
     padding-left: 15px;
