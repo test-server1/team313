@@ -985,6 +985,10 @@
     transition: opacity 0.3s ease;
 }
 
+.gallery .items:hover {
+    opacity: 50%;
+}
+
 /* Style for the load more button */
 #load-more-btn {
     padding: 12px 30px;
@@ -1037,7 +1041,6 @@
     text-transform: capitalize !important; }
   .blog-mp .item .img {
     border-radius: 15px;
-    height: 255px;
     overflow: hidden; }
 
 .blog-mp .main-blog .item {
