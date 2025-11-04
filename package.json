@@ -1,0 +1,28 @@
+{
+  "name": "team313-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/test-server1/team313.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/test-server1/team313/issues"
+  },
+  "homepage": "https://github.com/test-server1/team313#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "glob": "^11.0.3",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "purgecss": "^7.0.2"
+  }
+}
