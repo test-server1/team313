@@ -1,0 +1,213 @@
+
+/* --------------- header --------------- */
+.header-ma .caption {
+  padding: 120px 0;
+  position: relative; }
+  .header-ma .caption h1 {
+    width: 100%;
+    font-size: 120px;
+    line-height: 1.2; }
+  .header-ma .caption .text {
+    padding: 40px 40px 0 0;
+    text-wrap: pretty; }
+  .header-ma .caption .img {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    width: 220px; }
+    .header-ma .caption .img .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 80px; }
+
+
+
+.mimg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-ma .mimg {
+  height: 600px;
+  position: relative;
+  overflow: hidden; }
+  .header-ma .mimg .lg-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    -webkit-clip-path: url(#svgTextPath);
+    clip-path: url(#svgTextPath);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-transform: translateX(30%) translateY(60%);
+    -ms-transform: translateX(30%) translateY(60%);
+    transform: translateX(30%) translateY(60%); }
+    .header-ma .mimg .lg-text span {
+      font-family: "Playfair Display", serif;
+      font-style: italic; }
+
+/* ====================== [ Start Global ] ====================== */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--theme-color); }
+
+main {
+  background-image: url(../imgs/bg-main.jpg);
+  background-size: cover; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0; }
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -3px; }
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -3px; }
+
+h3 {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -2px; }
+
+h4 {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px; }
+
+h5 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px; }
+
+h6 {
+  font-size: 24px;
+  line-height: 32px; }
+
+.sub-color {
+  color: #999898; }
+
+.sub-head {
+  font-size: 20px;
+  line-height: 28px; }
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0; }
+
+.sec-head .sub-head {
+  position: relative;
+  padding-left: 25px; }
+  .sec-head .sub-head:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0; }
+
+.loader-wrap svg {
+  fill: #1d1d1d; }
+
+.butn.butn-bord {
+  border: 1px solid rgba(255, 255, 255, 0.3); }
+  .butn.butn-bord:hover {
+    background: #fff;
+    color: #212121; }
+
+.icon.invert img {
+  -webkit-filter: invert(1);
+  filter: invert(1); }
+
+.butn .icon {
+  width: 18px; }
+
+.butn:hover .icon.invert img {
+  -webkit-filter: invert(0);
+  filter: invert(0); }
+
+/* ====================== [ Start Responsive ] ====================== */
+@media screen and (max-width: 992px) {
+  .sub-head {
+    margin-left: 15px; }
+  .header-ma .caption h1 {
+    font-size: 60px; }
+  .header-ma .caption .img {
+    width: 175px; }
+  .header-ma .mimg .lg-text text {
+    font-size: 140px !important; }
+  .services-ds .item .title h2 {
+    font-size: 80px;
+    line-height: 1.2; }
+  .awards-sa {
+    padding-bottom: 0; }
+  .about-ma {
+    display: block !important; }
+  .about-ma .content {
+    width: 100%;
+    padding: 0 15px !important; }
+    .about-ma .content .item {
+      margin-top: 140px; } }
+
+@media screen and (max-width: 768px) {
+  /* .sec-head {
+    display: block !important; } */
+    .sec-head .ml-auto {
+      margin-top: 15px; }
+  .header-ma .caption {
+    display: block !important;
+    padding: 140px 0 80px; }
+    .header-ma .caption h1 {
+      font-size: 45px; }
+  .header-ma .mimg {
+    height: 400px; }
+  .sec-head h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: -1px; }
+  /* .services-ds .item {
+    display: block !important; } */
+  .services-ds .item .title {
+    margin-bottom: 0; }
+  .services-ds .item .title h2 {
+    font-size: 45px;
+    margin-bottom: 10px; }
+  .services-ds .item .icon {
+    margin-left: 15px; }
+  .works-ma {
+    padding-bottom: 200px; }
+  .works-ma .gallery-text .text h4 {
+    font-size: 40px; }
+  .testimonials-ds .container {
+    padding: 100px 15px; }
+  .testimonials-ds .qoute-icon .text {
+    width: 180px; }
+  .testimonials-ds .qoute-icon .icon {
+    width: 80px; }
+  .testimonials-ds .item h4 {
+    font-size: 25px;
+    letter-spacing: normal; }
+  .awards-sa .item-line .honors {
+    margin-bottom: 15px; }
+  .awards-sa .item-line .project-date {
+    margin-top: 15px; } }

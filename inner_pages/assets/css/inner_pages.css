@@ -291,7 +291,7 @@
   height: 2.1rem;
 }
 .intro-iner .img {
-  height: 580px;
+  /* height: 580px; */
   border-radius: 15px;
 }
 .intro-iner .sec-head {
