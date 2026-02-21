@@ -383,7 +383,7 @@
                               id="name"
                               type="text"
                               name="name"
-                              placeholder="Name"
+                              placeholder="Name *"
                               required="required"
                             />
                           </div>
@@ -395,7 +395,18 @@
                               id="email"
                               type="email"
                               name="email"
-                              placeholder="Email"
+                              placeholder="Email *"
+                              required="required"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group mb-30">
+                            <input
+                              id="hyk"
+                              type="text"
+                              name="hyk"
+                              placeholder="How did you hear about us? *"
                               required="required"
                             />
                           </div>
@@ -405,7 +416,7 @@
                             <textarea
                               id="message"
                               name="message"
-                              placeholder="Message"
+                              placeholder="Message *"
                               rows="4"
                               required="required"
                             ></textarea>
@@ -646,6 +657,7 @@
               name: document.getElementById('name').value,
               email: document.getElementById('email').value,
               message: document.getElementById('message').value,
+              hyk: document.getElementById('hyk').value,
               recaptchaResponse: recaptchaResponse, // Include reCAPTCHA response in the request
             }),
           })

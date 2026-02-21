@@ -14,9 +14,9 @@ export default async function handler(req, res) {
 
   res.setHeader('Access-Control-Allow-Origin', '*')
 
-  const { name, email, message, recaptchaResponse } = req.body
+  const { name, email, message, hyk, recaptchaResponse } = req.body
 
-  if (!name || !email || !message) {
+  if (!name || !email || !message || !hyk) {
     return res.status(400).json({ error: 'Missing required fields' })
   }
 
@@ -68,6 +68,7 @@ export default async function handler(req, res) {
         name,
         email,
         message,
+        hyk,
         apiKey: APP_SCRIPT_API_KEY,
         referer: 'https://test-server1-github-io.vercel.app', // CHANGE THIS TO YOUR DOMAIN
         recaptchaResponse,
